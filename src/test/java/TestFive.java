@@ -75,11 +75,5 @@ public class TestFive {
         Assert.assertTrue(message_is_displayed);
     }
 
-    @Test
-    public void testLocalFile() {
-        driver.get("home.html");
-        String text =  driver.findElement(By.xpath("/html/body/p")).getText();
-        Assert.assertEquals("jestem tekstem", text);
-    }
 
 }
